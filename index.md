@@ -1,10 +1,10 @@
-# Lab Report 3
+# Lab Report 5
 
-The command I chose is the find command.
+The commands I chose to explore are the ls command and the grep command.
 
 ## 1. ```ls -R /path/to/directory```
 
-This is useful because it listst files recursively which can help with efficiently searching for files and file analysis.
+This is useful because it lists files recursively which can help with efficiently searching for files and file analysis.
 
 ![Image](Screen Shot 2023-05-07 at 3.27.05 PM.png)
 This screenshot shows all the files in the biomed directory. The files are listed recursively.
@@ -42,7 +42,7 @@ This screenshot shows all the files in the plos directory including hidden files
 
 ## 3. ```grep -r "string" /path/to/directory```
 
-This is useful because if you are doing research on a specific topic or looking for a specific keyword, this command will help you find files tat contain that keyword to narrow your search.
+This is useful because if you are doing research on a specific topic or looking for a specific keyword, this command will help you find files that contain that keyword to narrow your search.
 
 ![Image](Screen Shot 2023-05-10 at 10.12.37 PM.png)
 This screenshot shows all the files that are listed in the biomed directory that contain the keyword "obscure".
