@@ -1,60 +1,51 @@
 # Lab Report 5
 
-The commands I chose to explore are the ls command and the grep command.
+1. Blog post:
 
-## 1. ```ls -R /path/to/directory```
-
-This is useful because it lists files recursively which can help with efficiently searching for files and file analysis.
-
-![Image](Screen Shot 2023-05-07 at 3.27.05 PM.png)
-This screenshot shows all the files in the biomed directory. The files are listed recursively.
-
-![Image](Screen Shot 2023-05-10 at 6.25.18 PM.png)
-This screenshot shows all the files in the plos directory. The files are listed recursively.
+- What environment are you using (computer, operating system, web browser, terminal/editor, and so on)?
+macOS (operating system); VScode (editor); Chrome(browser) 
 
 
-- Recursively lists all the files and directories in a directory
-- Found using ChatGPT
-  - Input to ChatGPT: "command in the command line options similar to find command"
-  - Output from ChatGPT:
+- Detail the symptom you're seeing. Be specific; include both what you're seeing and what you expected to see instead. Screenshots are great, copy-pasted terminal output is also great. Avoid saying “it doesn't work”.
+I am trying to perform a simple math operation where I divide a number (dividend) by that same number with 5 subtracted from it. 
 
-![Image](Screen Shot 2023-05-24 at 2.32.58 PM.png)
+![Image](Screen Shot 2023-06-05 at 11.19.37 AM.png)
+![Image](Screen Shot 2023-06-05 at 11.19.44 AM.png)
 
-## 2. ```ls -a /path/to/directory```
+However, when I attempt to run my code I get this error message. I am not sure why this is happening because I am not trying to convert from an int to a boolean.
 
-This is useful because it lists hidden files in addition to regular files which the find command does not fo.
+![Image](Screen Shot 2023-06-05 at 11.22.54 AM.png)
 
-![Image](Screen Shot 2023-05-07 at 3.27.58 PM.png)
-This screenshot shows all the files in the biomed directory including hidden files. However, since there were no hidden files in this case, it simply lists all the files.
+- Detail the failure-inducing input and context. That might mean any or all of the command you're running, a test case, command-line arguments, working directory, even the last few commands you ran. Do your best to provide as much context as you can.
+I am simply doing the bash command. The command-line argument is run.sh. There are not test cases, because I change the value of the variables directly in the code. The working directory is the lab5 folder (as shown below). 
 
-![Image](Screen Shot 2023-05-10 at 6.26.25 PM.png)
-This screenshot shows all the files in the plos directory including hidden files. However, since there were no hidden files in this case, it simply lists all the files..
+![Image](Screen Shot 2023-06-05 at 11.02.56 AM.png)
 
+The last command I ran was this (shown below), but I accounted for that in my code.
 
-- Lists all files, including hidden ones, in a directory
-- Found using ChatGPT
-  - Input to ChatGPT: "give me  10 ls commands to find files in java"
-  - Output from ChatGPT:
-
-![Image](Screen Shot 2023-05-24 at 2.39.01 PM.png)
-![Image](Screen Shot 2023-05-24 at 2.39.06 PM.png)
+![Image](Screen Shot 2023-06-05 at 11.24.37 AM.png)
 
 
-## 3. ```grep -r "string" /path/to/directory```
+2. TA response:
+Based on the screenshots of your code that you have provided, I believe I can see where your mistake is. However, to confirm that this is the only problem, run the ```cat``` command on all your files in order for me to know that you have provided me with all the files accurately in your screenshots and so that I can examine and identify bugs or unexpected behavior. 
 
-This is useful because if you are doing research on a specific topic or looking for a specific keyword, this command will help you find files that contain that keyword to narrow your search.
+3. ![Image](Screen Shot 2023-06-05 at 11.09.37 AM.png)
 
-![Image](Screen Shot 2023-05-10 at 10.12.37 PM.png)
-This screenshot shows all the files that are listed in the biomed directory that contain the keyword "obscure".
+Based on that output, the bug is in line 7 of your code. When you are checking if one variable is equal to a value, you need to use the ```==``` operator, which is used for equality comparison. In your code, you write ```divisor = 0``` when you should write ```divisor == 0```. This is why the statement is being confused for a boolean statement.
 
-![Image](Screen Shot 2023-05-10 at 10.13.24 PM.png)
-This screenshot shows all the files that are listed in the plos directory that contain the keyword "rhythm".
+4. - The file & directory structure needed
+The correct file and directory structure needed should be the following.
+![Image](Screen Shot 2023-06-05 at 11.26.22 AM.png)
+
+- The contents of each file before fixing the bug
+![Image](Screen Shot 2023-06-05 at 11.19.37 AM.png)
+![Image](Screen Shot 2023-06-05 at 11.19.44 AM.png)
+
+- The full command line (or lines) you ran to trigger the bug
+![Image](Screen Shot 2023-06-05 at 11.27.58 AM.png)
 
 
-- Used to search for all the files in a directory that contain the specified string
-- Found using ChatGPT
-  - Input to ChatGPT: "can you use grep command to find files"
-  - Output from ChatGPT:
+- A description of what to edit to fix the bug
+In line 7, ```divisor = 0``` needs to be changed to ```divisor == 0``` because in this case the ```==``` operator should be used not ```=```.
 
-![Image](Screen Shot 2023-05-24 at 2.36.28 PM.png)
 
