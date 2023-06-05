@@ -1,5 +1,6 @@
 # Lab Report 5
 
+## Part 1
 1. Blog post:
 
 - What environment are you using (computer, operating system, web browser, terminal/editor, and so on)?
@@ -47,5 +48,8 @@ The correct file and directory structure needed should be the following.
 
 - A description of what to edit to fix the bug
 In line 7, ```divisor = 0``` needs to be changed to ```divisor == 0``` because in this case the ```==``` operator should be used not ```=```.
+
+## Part 2
+Something I really cool that I learned in the second half of the quarter is that we could use vim to directly edit files in the terminal. I did not realize how powerful the terminal is and how much you could do from it. This is definitely something I will be using in the future.
 
 
