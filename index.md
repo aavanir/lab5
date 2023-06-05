@@ -10,6 +10,7 @@ macOS (operating system); VScode (editor); Chrome(browser)
 - Detail the symptom you're seeing. Be specific; include both what you're seeing and what you expected to see instead. Screenshots are great, copy-pasted terminal output is also great. Avoid saying “it doesn't work”.
 I am trying to perform a simple math operation where I divide a number (dividend) by that same number with 5 subtracted from it. 
 
+![Image](Screen Shot 2023-05-24 at 8.14.05 PM.png)
 ![Image](Screen Shot 2023-06-05 at 11.19.37 AM.png)
 ![Image](Screen Shot 2023-06-05 at 11.19.44 AM.png)
 
