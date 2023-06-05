@@ -30,7 +30,8 @@ The last command I ran was this (shown below), but I accounted for that in my co
 2. TA response:
 Based on the screenshots of your code that you have provided, I believe I can see where your mistake is. However, to confirm that this is the only problem, run the ```cat``` command on all your files in order for me to know that you have provided me with all the files accurately in your screenshots and so that I can examine and identify bugs or unexpected behavior. 
 
-3. ![Image](Screen Shot 2023-06-05 at 11.09.37 AM.png)
+3. 
+![Image](Screen Shot 2023-06-05 at 11.09.37 AM.png)
 
 Based on that output, the bug is in line 7 of your code. When you are checking if one variable is equal to a value, you need to use the ```==``` operator, which is used for equality comparison. In your code, you write ```divisor = 0``` when you should write ```divisor == 0```. This is why the statement is being confused for a boolean statement.
 
