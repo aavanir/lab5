@@ -4,11 +4,11 @@
 1. Blog post:
 
 - What environment are you using (computer, operating system, web browser, terminal/editor, and so on)?
-macOS (operating system); VScode (editor); Chrome(browser) 
+macOS (operating system); VScode (editor); Chrome (browser) 
 
 
 - Detail the symptom you're seeing. Be specific; include both what you're seeing and what you expected to see instead. Screenshots are great, copy-pasted terminal output is also great. Avoid saying “it doesn't work”.
-I am trying to grade the student submissions in this repository (include link --> https://github.com/ucsd-cse15l-s23/list-methods-nested), but it is saying that ListExamples.java is not found. I am not sure what the problem is. This is a screenshot of the code that I have for ListExamples.java and the code I have for grad.sh.
+I am trying to grade the student submissions in this [repository]([chat.openai.com](https://github.com/ucsd-cse15l-s23/list-methods-nested)), but it is saying that ListExamples.java is not found. I am not sure what the problem is. This is a screenshot of the code that I have for ListExamples.java and the code I have for grade.sh.
 
 ![Image](Screen Shot 2023-06-08 at 4.12.35 PM.png)
 ![Image](Screen Shot 2023-06-08 at 4.12.42 PM.png)
@@ -108,7 +108,7 @@ Based on the screenshots of your code that you have provided, I am not able to s
 3. 
 ![Image](Screen Shot 2023-06-08 at 6.35.09 PM.png)
 
-Based on that output, the problem with your code is that your code does not account for nested files. The if statement ```if [[ -f student-submission/ListExamples.java ]]``` only works if ListExamples.java is directly in student-submission. ListExamples.java is a nested file, so it is not being found by your code. You need to change the code in grade.sh to account for nested files (hint: you can do this using ```find```).
+Based on that output, the problem with your code is that your code does not account for nested files. The if statement ```if [[ -f student-submission/ListExamples.java ]]``` only works if ListExamples.java is a direct file. ListExamples.java is a nested file, so it is not being found by your code. You need to change the code in grade.sh to account for nested files (hint: you can do this using ```find```).
 
 4. - The file & directory structure needed
 The correct file and directory structure needed should be the following.
