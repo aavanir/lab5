@@ -202,6 +202,6 @@ Add ```path_file=$(find student-submission -name "ListExamples.java")``` in line
 
 
 ## Part 2
-Something I really cool that I learned in the second half of the quarter is that we could use vim to directly edit files in the terminal. I did not realize how powerful the terminal is and how much you could do from it. This is definitely something I will be using in the future.
+Something really cool that I learned in the second half of the quarter is that we could use vim to directly edit files in the terminal. I did not realize how powerful the terminal is and how much you could do from it. This is definitely something I will be using in the future.
 
 
