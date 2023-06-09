@@ -103,7 +103,7 @@ The last command I ran was this (shown below).
 
 
 2. TA response:
-Based on the screenshots of your code that you have provided, I am not able to see what the problem is. Try doing running the ls command which shows the path to ListExamples.java. This is so that I can examine and identify bugs or unexpected behavior based on the file and directory structure. 
+Based on the screenshots of your code that you have provided, I am not able to see what the problem is. Try running the ```find $(pwd) -name``` command with ListExamples.java so that I can see the path to ListExamples.java. This is so that I can examine and identify bugs or unexpected behavior based on the file and directory structure. 
 
 3. 
 ![Image](Screen Shot 2023-06-08 at 6.35.09 PM.png)
