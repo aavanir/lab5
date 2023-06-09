@@ -108,7 +108,7 @@ Based on the screenshots of your code that you have provided, I am not able to s
 3. 
 ![Image](Screen Shot 2023-06-08 at 6.35.09 PM.png)
 
-Based on that output, the problem with your code is that your code does not account for nested files. ListExamples.java is a nested file, so it is not being found by your code. You need to change the code in grade.sh to account for nested files (hint: you can do this using ```find```)
+Based on that output, the problem with your code is that your code does not account for nested files. The if statement ```if [[ -f student-submission/ListExamples.java ]]``` only works if ListExamples.java is directly in student-submission. ListExamples.java is a nested file, so it is not being found by your code. You need to change the code in grade.sh to account for nested files (hint: you can do this using ```find```).
 
 4. - The file & directory structure needed
 The correct file and directory structure needed should be the following.
